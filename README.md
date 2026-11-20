@@ -1,20 +1,15 @@
-# TurismoUQ · Bases de Datos II
-
-Universidad del Quindío · Ingeniería de Sistemas y Computación (nocturna) · 2026-2
-Autores: María Jazmín Valencia Muñoz y Jhony Alexander Villanueva Ortiz
-Docente: Carolina Londoño Idárraga
-
 ## Orden de ejecución (Oracle Database Free 26ai, SQL Developer)
 
-| Orden | Script | Conexión |
-|---|---|---|
-| 0 | `00_crear_usuario.sql` | SYSTEM (crea el usuario TURISMOUQ) |
-| 1 | `entrega1/01_TurismoUQ_DDL.sql` | TURISMOUQ |
-| 2 | `entrega1/02_cargaDeDatos.sql` | TURISMOUQ |
-| 3 | `entrega1/03_consultas_analisis_TurismoUQ.sql` | TURISMOUQ |
-| 4 | `entrega2/01_paquete_completo.sql` | TURISMOUQ |
-| 5 | `entrega2/02_disparadores.sql` | TURISMOUQ |
-| 6 | `entrega2/03_tablespace_y_vista.sql` | Parte A: SYSTEM · Parte B: TURISMOUQ |
-
-Los scripts de la Entrega 2 se ejecutan sobre la base creada en la Entrega 1.
-El informe con las capturas está en `entrega2/Entrega_2_Informe.pdf`.
+| Orden | Archivo | Contenido | Usuario que lo ejecuta |
+| :--- | :--- | :--- | :--- |
+| 0 | `00_usuario_y_tablespaces.sql` | Creación del usuario del esquema y del tablespace del histórico | SYSTEM |
+| 1 | `01_DDL.sql` | Tablas, llaves y restricciones | TURISMOUQ |
+| 2 | `02_carga.sql` | Datos con el volumen mínimo | TURISMOUQ |
+| 3 | `03_consultas_analisis.sql` | Las 7 consultas de la Entrega 1 | TURISMOUQ |
+| 4 | `04_paquete.sql` | Función, procedimiento, cursor y paquete | TURISMOUQ |
+| 5 | `05_disparadores.sql` | Auditoría de TARIFA y solape de reservas | TURISMOUQ |
+| 6 | `06_vista_materializada.sql` | Vista materializada de ocupación | SYSTEM (Parte A) y TURISMOUQ (Parte B) |
+| 7 | `07_transacciones.sql` | Reserva y pago con SAVEPOINT | TURISMOUQ |
+| 8 | `08_indices.sql` | Índices y planes de ejecución | TURISMOUQ (2 sesiones) |
+| 9 | `09_seguridad.sql` | Roles, usuarios, perfil, GRANT y vistas | TURISMOUQ |
+| 10 | `10_pruebas.sql` | Pruebas de las Entregas 2 y 3 | SYSTEM (Parte A y C1-C3) y TURISMOUQ (Parte B) |
